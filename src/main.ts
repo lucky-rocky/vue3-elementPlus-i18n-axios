@@ -4,9 +4,11 @@ import router from './router'
 import store from './store'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import { i18n } from './i18n'
 
 createApp(App)
   .use(store)
   .use(router)
   .use(ElementPlus, { size: 'small', zIndex: 3000 })
+  .use(i18n)
   .mount('#app')
